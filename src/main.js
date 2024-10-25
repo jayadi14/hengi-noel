@@ -5,7 +5,7 @@ fetch("layout/header.html")
     document.getElementById("header-container").innerHTML = data;
 
     // Fetch navigation links from JSON
-    return fetch("navLinks.json");
+    return fetch("assets/json/navLinks.json");
   })
   .then((response) => response.json())
   .then((navLinks) => {
